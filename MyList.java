@@ -1,8 +1,9 @@
 package javaapplication13;
 
 public class MyList {
-      private double[] list;
-      private double sum;
+
+    private double[] list;
+    private double sum;
 
     public MyList() {
         this.list = new double[0];
@@ -14,10 +15,15 @@ public class MyList {
         newList[newList.length - 1] = o;
         this.list = newList;
     }
-    
-    public double getSum(){
-        for(int i = 0; i < this.list.length; i++){
+
+    public double getSum() {
+        for (int i = 0; i < this.list.length; i++) {
             sum += list[i];
-        } return sum;
-    } 
+        }
+        return sum;
+    }
+
+    public double getAvrg() {
+        return getSum() / list.length;
+    }
 }

@@ -14,13 +14,12 @@ public class JavaApplication13 {
             if (s != "") {
                 try {
                     double d = Double.parseDouble(s);
-//                    System.out.println(d);
                     ml.add(d);
                 } catch (NumberFormatException nfe) {
                     System.out.println("Ivesk skaiciu, debile");
                 }
             } else {
-                System.out.println("Suma: " + ml.getSum());
+                System.out.println("Vidurkis: " + ml.getAvrg());
                 arKartotiLoopa = false;
             }
         } while (arKartotiLoopa);
