@@ -24,6 +24,6 @@ public class MyList {
     }
 
     public double getAvrg() {
-        return getSum() / list.length;
+        return getSum() / this.list.length;
     }
 }
